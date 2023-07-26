@@ -1,0 +1,37 @@
+{
+    "file_type": "csv",
+    "name": "All Phrases",
+    "display": "word",
+    "compare": "compare_form",
+    "sorting": "sort_form",
+    "transducers": [
+        {
+            "source": "word",
+            "target": "norm_form",
+            "functions": [
+                "lambda x: x.lower()"
+            ]
+        },
+        {
+            "source": "norm_form",
+            "target": "compare_form",
+            "functions": [
+                "../transducers/inupiaq-approx.yaml"
+            ]
+        },
+        {
+            "source": "word",
+            "target": "sort_form",
+            "functions": [
+                "lambda x: x.lower()"
+            ]
+        }
+    ],
+    "targets": {
+        "entryID": "0",
+        "word": "1",
+        "definition": "2",
+        "example_sentence": ["3", "5", "7", "9", "11", "13", "15"],
+        "example_sentence_definition": ["4", "6", "8", "10", "12", "14", "16"]
+            }
+        }
