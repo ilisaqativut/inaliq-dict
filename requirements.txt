@@ -1,1 +1,1 @@
-mothertongues
+mothertongues<=1.0
